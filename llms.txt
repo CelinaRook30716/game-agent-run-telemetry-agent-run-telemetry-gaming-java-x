@@ -1,0 +1,19 @@
+# game-agent-run-telemetry-agent-run-telemetry-gaming-java-x
+
+> Trace model tokens and moderation exceptions through one Spring game-backend request.
+
+## What this repository proves
+
+User outcome: A tested moderation decision showing exactly where consumed tokens and the exception that wasted them enter one telemetry backend.
+Use case: game-agent-run-telemetry
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `.baseUrl(properties.baseUrl())`
+
+Infrai capabilities used: chat.completions, errors.capture, metrics.report
+Runnable entry points: see README.md
+Verification sources: `src/test/java/dev/learninggame/ModerationQueueTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

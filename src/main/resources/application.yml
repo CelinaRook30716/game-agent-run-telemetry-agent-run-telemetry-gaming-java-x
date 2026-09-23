@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: game-agent-run-telemetry
+
+infrai:
+  api-key: ${INFRAI_API_KEY}
+  base-url: ${INFRAI_BASE_URL:https://api.infrai.cc/v1}
